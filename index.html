@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Page</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div id="container">
+    <h1 id="title">Title</h1>
+    <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    <form id="survey-form">
+
+      <label id="name-label" class="box-desc" for="name">
+        <input id="name" class="box" type="text" placeholder="Jane Smith" required>Name
+      </label>
+
+      <label id="email-label" class="box-desc" for="email">
+        <input id="email" class="box" type="email" placeholder="janesmith@email.com" required>Email
+      </label>
+
+      <label id="number-label" class="box-desc" for="number">
+        <input id="number" class="box" type="number" placeholder="22" min="15" max="99">Age
+      </label>
+
+      <div class="survey-menu">
+         <h3>What is your favorite Valentine's Day Date Night?</h3>
+        <label class="customCheck">Dinner Out
+          <input type="radio" name="date" value="dinner" checked="checked">
+          <span class="circle"></span>
+        </label>
+        <label class="customCheck">Staying Home
+          <input type="radio" name="date" value="home">
+          <span class="circle"></span>
+        </label>
+        <label class="customCheck">Going on a Trip
+          <input type="radio" name="date" value="trip">
+          <span class="circle"></span>
+        </label><!--radio-->
+      </div>
+
+       <div class="survey-menu">
+         <label for="dropdown" >
+          <span class="head3">Who gives better gifts?</span>
+         </label><!--dropdown menu-->
+         <select id="dropdown" class="box box-desc" name="gifts">
+           <option value="me">ME!!</option>
+           <option value="partner">My Partner</option>
+           <option value="both">Both</option>
+         </select>
+      </div>
+
+      <div class="survey-menu">
+        <h3>What are your favorite Valentine's Day gifts?</h3>
+        <label class="customCheck">
+          <input type="checkbox" value="flowers" checked="checked">
+          <span class="checkText">Flowers</span>
+          <span class="check"></span>
+        </label>
+        <label class="customCheck">
+          <input type="checkbox" value="choclate">
+          <span class="checkText">Chocolates</span>
+          <span class="check"></span>
+        </label>
+        <label class="customCheck">
+          <input type="checkbox" value="jewelry">
+          <span class="checkText">Jewelry</span>
+          <span class="check"></span>
+        </label>
+        <label class="customCheck">
+          <input type="checkbox" value="clothes">
+          <span class="checkText">Clothes</span>
+          <span class="check"></span>
+        </label>
+        <label class="customCheck">
+          <input type="checkbox" value="misc">
+          <span class="checkText">Miscellaneous</span>
+          <span class="check"></span>
+        </label>
+        <label class="customCheck">
+          <input id="otherInput" type="checkbox" value="other">
+          <span class="checkText">Other</span>
+          <span class="check"></span>
+        </label>
+        <textarea id="otherText" class="box-desc"></textarea>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
